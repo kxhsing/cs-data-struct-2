@@ -1,0 +1,108 @@
+PART 1: DISCUSSION QUESTIONS
+----------------------------------------
+
+
+RECURSION
+----------------------------------------
+1. Recursion is when a function calls itself. It is useful when there is an arbitrary number of times a function needs to be called until it returns the final value. Recursion often acts like a stack in which the "inner-most" layer of the recursion is returned before the "outside" layer (the layer that called the inner function) is returned
+
+2. It is useful to have a base case because that is the case in which the function is told to stop the recursion process. Without a base case, the recursion process will just keep continuing to run.
+
+
+
+GRAPHS
+----------------------------------------
+1. A graph is a structure that is like a tree in which it shows the relationships among nodes. It uses edges to depict relationships between nodes. Nodes have adjacency lists (nodes it is connected to). 
+
+2. Graphs can be either directed (like a tree) or undirected, and can be cyclical or cyclical, which means there is usually not a parent or root to it, making it different from a tree since there does not need to be a hierarchical structure to it.
+
+3. A subway system would be good to model with a graph because a stop (i.e., node) can usually have many different lines running through it, and a stop can be adjacent to one or many other stops. There is usually not a parent/root because people can travel in both directions, making a subway system an undirected graph.
+
+
+PERFORMANCE OF DIFFERENT DATA STRUCTURES
+----------------------------------------
+
+Python List
+    Add L: O(n)
+    Pop L: O(n)
+    Pop R: O(1)
+
+Linked List
+    Index: O(n)
+    Search: O(n)
+    Add R: O(1)
+    Add L: O(1)
+    Pop L: O(1)
+    Pop R: O(n)
+
+Doubly Linked List
+    Index: O(n)
+    Search: O(n)
+    Add R: O(1)
+    Add L: O(1)
+    Pop L: O(1)
+    Pop R: O(1)
+
+Queue (as Array)
+    Add R: O(1)
+    Pop L: O(n)
+
+Queue (as LL or DLL)
+    Add R: O(1)
+    Pop L: O(1)
+
+Stack (as Array, LL, or DLL)
+    Add R: O(1)
+    Pop R: O(1)
+
+Deque (as DLL)
+    Add R: O(1)
+    Add L: O(1)
+    Pop L: O(1)
+    Pop R: O(1)
+
+
+
+Runtime & Memory
+----------------
+Set
+    Get: O(1)
+    Add: O(1)
+    Delete: O(1)
+    Iterate: O(n log n)
+    Memory: medium
+
+BST
+    Get: O(log n)
+    Add: O(log n)
+    Delete: O(log n)
+    Iterate: O(n)
+    Memory: little
+
+Tree
+    Get: O(n)
+    Add: O(1)
+    Delete: O(1)
+    Iterate: O(n)
+    Memory: little
+
+
+
+SORTING
+----------------------------------------
+1. The Bubble Sort algorithm takes a list of numbers and iterates through the list comparing two numbers at a time and switches their position in the list if the left one is bigger than the right one. At the end of the first round, the largest number of the list should be on the end of the list. This largest number "bubbles" to the top, giving the algorithm its name. The comparison process is repeated until the list has been completely sorted.
+
+
+2. The Merge Sort algorithm runs in O(n log n) which is the fastest possible funtime by which to sort a list with comparative sorting. In Merge Sort, two sorted lists are compared in which the smallest number of the two lists are compared to each other, and whichever one is smaller is added to a third (empty) list. The process of comparing the first elements of each sorted list is repeated until a list is empty, and after that the numbers from the list that still has numbers left is appended to the final result list. 
+
+To guarantee two pre-sorted lists, using recursion to split a list into two, and each subsequent list into two until each list is a list of one, and then merging them together in the aforementioned method would ensure that the final, merged list would be sorted.
+
+
+3. The Quick Sort algorithm runs on O(n log n) time and works on the idea of a partition. A "pivot" number is first selected from the list, and then the numbers lower than the pivot are moved to the beginning of the list while the numbers higher than the pivot are moved to the right of the pivot number. Once the numbers are partitioned, they are then recursively sorted in a divide and conquery fashion. The selected pivot will greatly affect how efficient Quick Sort algorithm is.
+
+
+
+
+
+
+
